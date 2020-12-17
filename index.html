@@ -166,91 +166,6 @@
         <br><br><br>
         <div class="masthead2"> </div>
     </section>
-    <section class="about-sectiontwo text-center " id="conversor">
-        <div class="container ">
-            <div class="col">
-                <div class="col-lg-8 mx-auto ">
-                    <h2 class="text-white mb-4 ">Polares a Rectangulares</h2>
-                </div>
-                <center>
-                    <form id="Polarform" name="Polarform" onsubmit="javascript:void(0)" style="display:block; margin-left: 1%; margin-top: 20px; margin-bottom:10px;">
-                        <div class="container">
-                            <!-- Featured Project Row-->
-                            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                                <!--Tabla de calculadora-->
-                                <div class="col-xl-8 col-lg-7">
-                                    <table class="text-white mx-auto mt-2 mb-5">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <span id="polar1" style="visibility:hidden; padding: 0 2px 0 2px;">-</span>
-                                                    <input onfocus="this.select()" class="enjoy-css" type="text" size="6" name="polar11" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
-                                                </td>
-                                                <td>
-                                                    <span id="polar2b" style="display:none; margin:0 5px 0 5px; text-align: center;">-</span>
-                                                    <span id="polar2a" style=" margin:0 5px 0 5px; text-align: center;">+</span>
-                                                </td>
-                                                <td>
-                                                    <input onfocus="this.select()" class="enjoy3-css" type="text" size="6" name="polar12" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
-                                                    <i>°</i>
-                                                </td>
-    
-                                                <td>
-                                                    &nbsp; &nbsp;
-                                                </td>
-                                                <td>
-                                                    <!-- boton = resolver -->
-                                                    <button id="enter" type="button" class="boton1 btn btn-secondary" onclick="polarrecta();mostrar_ocultar('polarmsg'); mostrar_ocultar('Polarform');">=</button>
-                                                </td>
-                                                <td>
-                                                    &nbsp; &nbsp;
-                                                </td>
-                                                <td>
-                                                    <span id="polar1resp" style="visibility:hidden; padding: 0 2px 0 2px;">-</span>
-                                                    <input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="polar21" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
-                                                </td>
-                                                <td>
-                                                    <span id="polar2resp" style="display:visible; margin:0 5px 0 5px; text-align: center;">+</span>
-                                                </td>
-                                                <td>
-                                                    <i>J</i>
-                                                    <input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="polar22" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="text-align: center;"><span class="change_sign" onclick="signo1polar();">+/−</span>
-                                                </td>
-                                                <td></td>
-                                                <td style="text-align: center;"><span class="change_sign" style="text-align: center;" onclick="signo2polar();">+/−</span>
-                                                </td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!-- Fin Tabla-->
-                                </div>
-                                <!-- Lado derecho-->
-                                <div class="col-xl-4 col-lg-5 ">
-                                    <div class="featured-text text-center text-lg-center text-white-50 mx-auto mt-2 mb-5 ">
-                                        <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px; margin-right: 200px;" onclick="borrarpolar()">Borrar</button>
-                                        <button id="grafrectangular" type="button" class="boton1 btn btn-secondary" onclick="graftres();mostrar_ocultar('polarmsg'); mostrar_ocultar('Polarform');">Grafica <br>Numero <br>Rectangular</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </center>
-                <div id="polarmsg" class="notepad" style="display: none;">
-                    <div class="notepad-heading">
-                        <div id="reiniciar" class="cerrar btn" onclick="mostrar_ocultar('polarmsg'); mostrar_ocultar('Polarform');">Cerrar</div>
-                    </div>
-                    <div id="polarmsg2" tabindex="0" style="clear:both; color: black; padding: 1%; width:100%; overflow-x:auto;">
-                        <h4 style="color: red;">Error: Rellena todos los campos para poder realizar el cálculo.</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="about-sectiontwo text-center " id="conversor">
     <div class="col">
         <div class="col-lg-8 mx-auto ">
@@ -336,6 +251,91 @@
 <br><br><br>
 <div class="masthead2"> </div>
 </section>
+<section class="about-sectiontwo text-center " id="conversor">
+    <div class="container ">
+        <div class="col">
+            <div class="col-lg-8 mx-auto ">
+                <h2 class="text-white mb-4 ">Polares a Rectangulares</h2>
+            </div>
+            <center>
+                <form id="Polarform" name="Polarform" onsubmit="javascript:void(0)" style="display:block; margin-left: 1%; margin-top: 20px; margin-bottom:10px;">
+                    <div class="container">
+                        <!-- Featured Project Row-->
+                        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                            <!--Tabla de calculadora-->
+                            <div class="col-xl-8 col-lg-7">
+                                <table class="text-white mx-auto mt-2 mb-5">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span id="polar1" style="visibility:hidden; padding: 0 2px 0 2px;">-</span>
+                                                <input onfocus="this.select()" class="enjoy-css" type="text" size="6" name="polar11" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
+                                            </td>
+                                            <td>
+                                                <span id="polar2b" style="display:none; margin:0 5px 0 5px; text-align: center;">-</span>
+                                                <span id="polar2a" style=" margin:0 5px 0 5px; text-align: center;">+</span>
+                                            </td>
+                                            <td>
+                                                <input onfocus="this.select()" class="enjoy3-css" type="text" size="6" name="polar12" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
+                                                <i>°</i>
+                                            </td>
+
+                                            <td>
+                                                &nbsp; &nbsp;
+                                            </td>
+                                            <td>
+                                                <!-- boton = resolver -->
+                                                <button id="enter" type="button" class="boton1 btn btn-secondary" onclick="polarrecta();mostrar_ocultar('polarmsg'); mostrar_ocultar('Polarform');">=</button>
+                                            </td>
+                                            <td>
+                                                &nbsp; &nbsp;
+                                            </td>
+                                            <td>
+                                                <span id="polar1resp" style="visibility:hidden; padding: 0 2px 0 2px;">-</span>
+                                                <input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="polar21" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
+                                            </td>
+                                            <td>
+                                                <span id="polar2resp" style="display:visible; margin:0 5px 0 5px; text-align: center;">+</span>
+                                            </td>
+                                            <td>
+                                                <i>J</i>
+                                                <input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="polar22" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center;"><span class="change_sign" onclick="signo1polar();">+/−</span>
+                                            </td>
+                                            <td></td>
+                                            <td style="text-align: center;"><span class="change_sign" style="text-align: center;" onclick="signo2polar();">+/−</span>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- Fin Tabla-->
+                            </div>
+                            <!-- Lado derecho-->
+                            <div class="col-xl-4 col-lg-5 ">
+                                <div class="featured-text text-center text-lg-center text-white-50 mx-auto mt-2 mb-5 ">
+                                    <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px; margin-right: 200px;" onclick="borrarpolar()">Borrar</button>
+                                    <button id="grafrectangular" type="button" class="boton1 btn btn-secondary" onclick="graftres();mostrar_ocultar('polarmsg'); mostrar_ocultar('Polarform');">Grafica <br>Numero <br>Rectangular</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </center>
+            <div id="polarmsg" class="notepad" style="display: none;">
+                <div class="notepad-heading">
+                    <div id="reiniciar" class="cerrar btn" onclick="mostrar_ocultar('polarmsg'); mostrar_ocultar('Polarform');">Cerrar</div>
+                </div>
+                <div id="polarmsg2" tabindex="0" style="clear:both; color: black; padding: 1%; width:100%; overflow-x:auto;">
+                    <h4 style="color: red;">Error: Rellena todos los campos para poder realizar el cálculo.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Graficadora-->
             <form id="graf0" name="graf0" onsubmit="javascript:void(0)" style="display:block; margin-left: 1%; margin-top: 20px; margin-bottom:10px;">
                 <span id="showgraf">           
