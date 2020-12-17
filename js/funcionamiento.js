@@ -271,7 +271,7 @@ function suma() {
     resa = a.toFixed(digits);
     resb = b.toFixed(digits);
 
-    res.innerHTML += '<input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="rc" value="' + a.toFixed(digits) + ' ' + signo(b) + ' ' + Math.abs(b).toFixed(digits) + 'i" onkeypress="return validar(event)" style="text-align: center" ;="" placeholder="?"> ';
+    res.innerHTML += '<input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="rc" value="' + a.toFixed(digits) + ' ' + signo(b) + ' ' + Math.abs(b).toFixed(digits) + 'i" onkeypress="return validar(event)" style="text-align: center; width:150px;" ;="" placeholder="?"> ';
 
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, "resp"])
 }
@@ -286,7 +286,7 @@ function resta() {
     var b = y1 - y2;
     resa = a.toFixed(digits);
     resb = b.toFixed(digits);
-    res.innerHTML += '<input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="rc" value="' + a.toFixed(digits) + ' ' + signo(b) + ' ' + Math.abs(b).toFixed(digits) + 'i" onkeypress="return validar(event)" style="text-align: center" ;="" placeholder="?"> ';
+    res.innerHTML += '<input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="rc" value="' + a.toFixed(digits) + ' ' + signo(b) + ' ' + Math.abs(b).toFixed(digits) + 'i" onkeypress="return validar(event)" style="text-align: center; width:150px;" ;="" placeholder="?"> ';
 
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, "resultado"])
 }
@@ -310,7 +310,7 @@ function divide() {
     var Im = b1 / c1;
     resa = Re.toFixed(digits);
     resb = Im.toFixed(digits);
-    res.innerHTML += '<input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="rc" value="' + Re.toFixed(digits) + ' ' + signo(Im) + ' ' + Math.abs(Im).toFixed(digits) + 'i" onkeypress="return validar(event)" style="text-align: center" ;="" placeholder="?"> ';
+    res.innerHTML += '<input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="rc" value="' + Re.toFixed(digits) + ' ' + signo(Im) + ' ' + Math.abs(Im).toFixed(digits) + 'i" onkeypress="return validar(event)" style="text-align: center; width:150px;" ;="" placeholder="?"> ';
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, "resultado"])
 }
 function multiplica() {
@@ -328,7 +328,7 @@ function multiplica() {
     var Im = (c + d);
     resa = Re.toFixed(digits);
     resb = Im.toFixed(digits);
-    res.innerHTML += '<input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="rc" value="' + Re.toFixed(digits) + ' ' + signo(Im) + ' ' + Math.abs(Im).toFixed(digits) + 'i" onkeypress="return validar(event)" style="text-align: center" ;="" placeholder="?"> ';
+    res.innerHTML += '<input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="rc" value="' + Re.toFixed(digits) + ' ' + signo(Im) + ' ' + Math.abs(Im).toFixed(digits) + 'i" onkeypress="return validar(event)" style="text-align: center; width:150px;" ;="" placeholder="?"> ';
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, "resultado"])
 }
 function setDigits() {
