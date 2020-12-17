@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Calculadora y Graficadora de Numeros Complejos</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <script src="/js/ploty.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async=""></script>
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js"></script>
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <!-- Calculadora-->
+    <section class="about-section text-center" id="caluladora">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4">Calculadora De Numeros Complejos</h2>
+                    <p class="text-white-50">
+                        Usarla es muy sencillo. Solo tienes que ingresar los dos números complejos con los cuales deseas operar, elegir la operación que deseas de realizar y presionar el botón '=' «Calcular».
+                    </p>
+                </div>
+            </div>
+            <div id="contenedor1" style="width:100%; ">
+                <section id="MasterMitte">
+                    <div class="ergebnis-box-1">
+                        <div style="clear:both;">
+                            <center>
+                                <form id="Formular6" name="Formular6" onsubmit="javascript:void(0)" style="display:block; margin-left: 1%; margin-top: 20px; margin-bottom:10px;">
+                                    <div class="container">
+                                        <!-- Featured Project Row-->
+                                        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                                            <!--Tabla de calculadora-->
+                                            <div class="col-xl-8 col-lg-7">
+                                                <table class="text-white mx-auto mt-2 mb-5">
+                                                    <tbody>
+                                                        <tr>
+                                                            <!--Renglon 1-->
+                                                            <td>
+                                                                <!-- signo mas menos valor 1-->
+                                                                <span id="negativo1a" style="visibility:hidden; padding: 0 2px 0 2px;">-</span>
+                                                                <!-- input real 1-->
+                                                                <input onfocus="this.select()" class="enjoy-css" type="text" size="6" name="a11" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
+                                                            </td>
+                                                            <td>
+                                                                <!-- signo mas menos imaginario 1, separacion-->
+                                                                <span id="negativo2a" style="display:none; margin:0 5px 0 5px; text-align: center;">-</span>
+                                                                <span id="positivo2a" style=" margin:0 5px 0 5px; text-align: center;">+</span>
+                                                            </td>
+                                                            <td>
+                                                                <!-- input imaginario 1-->
+                                                                <input onfocus="this.select()" class="enjoy-css" type="text" size="6" name="a12" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
+                                                                <i>&nbsp;i</i>
+                                                            </td>
+                                                            <td>
+                                                                <!-- seleccionar operador -->
+                                                                <span><select id="oper" class="enjoy-css bord" name="oper" style="margin:8px">
+                                                                <option>+</option>
+                                                                <option>-</option>
+                                                                <option>x</option>
+                                                                <option>÷</option>
+                                                              </select></span>
+                                                            </td>
+                                                            <td>
+                                                                <!-- espacio vacio -->
+                                                            </td>
+                                                            <td>
+                                                                <!-- real 2 y signo -->
+                                                                <span id="negativo1b" style="visibility:hidden; padding: 0 2px 0 2px;">-</span>
+                                                                <input onfocus="this.select()" type="text" class="enjoy-css" size="6" name="a21" value="" onkeypress="return validar(event)" placeholder="?" style="text-align: center;">
+                                                            </td>
+                                                            <td>
+                                                                <!-- signo imaginario -->
+                                                                <span id="negativo2b" style="display:none; margin:0 5px 0 5px; text-align: center;">-</span>
+                                                                <span id="positivo2b" style="margin:0 5px 0 5px; text-align: center;">+</span></td>
+                                                            <td>
+                                                                <!-- imaginario 2 -->
+                                                                <input onfocus="this.select()" class="enjoy-css" type="text" size="6" name="a22" value="" onkeypress="return validar(event)" style="text-align: center" ;="" placeholder="?"><i>&nbsp;&nbsp;i</i>
+                                                            </td>
+                                                            <td>
+                                                                <!-- espacio vacio -->&nbsp;&nbsp;
+                                                            </td>
+                                                            <td>
+                                                                <!-- boton = resolver -->
+                                                                <button id="enter" type="button" class="boton1 btn btn-secondary" onclick="aritmetica1();mostrar_ocultar('soluciones'); mostrar_ocultar('Formular6');">=</button>
+                                                            </td>
+                                                            <td>
+                                                                &nbsp;&nbsp;
+                                                            </td>
+                                                            <td>
+                                                                <!-- respuesta -->
+                                                                <div id="resp">
+                                                                    <input onfocus="this.select()" class="enjoy2-css" type="text" size="6" name="rc" value="" onkeypress="return validar(event)" style="text-align: center" ;="" placeholder="?">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="text-align: center;"><span class="change_sign" onclick="signo1a();">+/−</span>
+                                                            </td>
+                                                            <td></td>
+                                                            <td style="text-align: center;"><span class="change_sign" style="text-align: center;" onclick="signo1b();">+/−</span>
+                                                            </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td style="text-align: center;"><span class="change_sign" onclick="signo2a();">+/−</span>
+                                                            </td>
+                                                            <td></td>
+                                                            <td style="text-align: center;"><span class="change_sign" style="text-align: center;" onclick="signo2b();">+/−</span>
+                                                            </td>
+                                                            <td>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- Fin Tabla-->
+                                                <p style="font-size: 12pt; text-align: center; margin-top: 10px;" class="text-white-50">
+                                                    Número de decimales: <input onfocus="this.select()" class="enjoy-css" type="text" size="6" id="digs" value="3" onchange="javascript:setDigits()" style="text-align: center;">
+                                                </p>
+                                            </div>
+                                            <!-- Lado derecho-->
+                                            <div class="col-xl-4 col-lg-5 ">
+                                                <div class="featured-text text-center text-lg-center text-white-50 mx-auto mt-2 mb-5 ">
+                                                    <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px;" onclick="borrartodo()">Borrar</button>
+                                                    <br><br>
+                                                    <button id="graficarcomplejo" type="button" class="boton1 btn btn-secondary" onclick="grafuno();mostrar_ocultar('soluciones'); mostrar_ocultar('Formular6');">Grafica <br>Numero <br>Complejo</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </center>
+                            <div id="soluciones" class="notepad" style="display: none;">
+                                <div class="notepad-heading">
+                                    <div id="reiniciar" class="cerrar btn" onclick="mostrar_ocultar('soluciones'); mostrar_ocultar('Formular6');">Cerrar</div>
+                                </div>
+                                <div id="resultado" tabindex="0" style="clear:both; color: black; padding: 1%; width:100%; overflow-x:auto;">
+                                    <h4 style="color: red;">Error: Rellena todos los campos para poder realizar el cálculo.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="masthead2"> </div>
+    </section>
+    <a href="/modos/polaresarect.html">Polares a Rectangulares</a>
+    <br>
+    <a href="/modos/rectapolares.html">Rectangulares a polares</a>
+    <!-- Graficadora-->
+            <form id="graf0" name="graf0" onsubmit="javascript:void(0)" style="display:block; margin-left: 1%; margin-top: 20px; margin-bottom:10px;">
+                <span id="showgraf">           
+                </span>
+            </form>
+        </div>
+
+            <!-- Bootstrap core JS-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js "></script>
+            <!-- Third party plugin JS-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js "></script>
+            <!-- Core theme JS-->
+            <script src="/js/scripts.js "></script>
+            <script src="/js/ploty.js"></script>
+            <script src="/js/funcionamiento.js"></script>
+</body>
+</html>
