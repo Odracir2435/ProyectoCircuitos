@@ -21,7 +21,7 @@ var s1polarresp = 1;
 var s2polarresp = 1;
 var polar11resp;
 var polar12resp;
-var digits = 3;
+var digits = 2;
 var resa;
 var resb;
 function signo1a() {

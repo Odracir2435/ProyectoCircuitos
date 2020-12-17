@@ -19,16 +19,13 @@
     <script src="https://code.jquery.com/jquery-3.3.0.min.js"></script>
 </head>
 <body id="page-top">
-    <!-- Navigation-->
+  
     <!-- Calculadora-->
     <section class="about-section text-center" id="caluladora">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2 class="text-white mb-4">Calculadora De Numeros Complejos</h2>
-                    <p class="text-white-50">
-                        Usarla es muy sencillo. Solo tienes que ingresar los dos números complejos con los cuales deseas operar, elegir la operación que deseas de realizar y presionar el botón '=' «Calcular».
-                    </p>
                 </div>
             </div>
             <div id="contenedor1" style="width:100%; ">
@@ -123,15 +120,12 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- Fin Tabla-->
-                                                <p style="font-size: 12pt; text-align: center; margin-top: 10px;" class="text-white-50">
-                                                    Número de decimales: <input onfocus="this.select()" class="enjoy-css" type="text" size="6" id="digs" value="3" onchange="javascript:setDigits()" style="text-align: center;">
-                                                </p>
+                                               
                                             </div>
                                             <!-- Lado derecho-->
                                             <div class="col-xl-4 col-lg-5 ">
                                                 <div class="featured-text text-center text-lg-center text-white-50 mx-auto mt-2 mb-5 ">
                                                     <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px;" onclick="borrartodo()">Borrar</button>
-                                                    <br><br>
                                                     <button id="graficarcomplejo" type="button" class="boton1 btn btn-secondary" onclick="grafuno();mostrar_ocultar('soluciones'); mostrar_ocultar('Formular6');">Grafica <br>Numero <br>Complejo</button>
                                                 </div>
                                             </div>
@@ -226,7 +220,6 @@
                                 <div class="col-xl-4 col-lg-5 ">
                                     <div class="featured-text text-center text-lg-center text-white-50 mx-auto mt-2 mb-5 ">
                                         <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px;" onclick="borrarpolar()">Borrar</button>
-                                        <br><br>
                                         <button id="grafrectangular" type="button" class="boton1 btn btn-secondary" onclick="graftres();mostrar_ocultar('polarmsg'); mostrar_ocultar('Polarform');">Grafica <br>Numero <br>Rectangular</button>
                                     </div>
                                 </div>
@@ -312,7 +305,6 @@
                         <div class="col-xl-4 col-lg-5 ">
                             <div class="featured-text text-center text-lg-center text-white-50 mx-auto mt-2 mb-5 ">
                                 <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px;" onclick="borrarrect()">Borrar</button>
-                                <br><br>
                                 <button id="graficarcomplejo" type="button" class="boton1 btn btn-secondary" onclick="grafdos();mostrar_ocultar('rectmsg'); mostrar_ocultar('Rectform');">Grafica <br>Numero <br>Polar</button>
                             </div>
                         </div>
