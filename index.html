@@ -19,7 +19,24 @@
     <script src="https://code.jquery.com/jquery-3.3.0.min.js"></script>
 </head>
 <body id="page-top">
-  
+  <section>
+      <h1>Funcionamiento:</h1>
+      <p>Para cambiar el simbolo tendras que dar click en el +/- que esta ubicado abajo de cada digito</p>
+      <img src="images/Screenshot_1.jpg" alt=""><p></p><img src="images/Screenshot_2.jpg" alt="">
+      <p>Para hacer el cambio en la calculadora de que operacion deseas tendras que darle click al operador y se desplegara un sub menu que te dara a escoger que operador quieres</p>
+      <img src="images/Screenshot_3.jpg" alt="">
+      <p>Para ver el resultado de dichosa operacion tendras que dar click en el signo de igual y se mostrara la respuesta</p>
+      <img src="images/Screenshot_4.jpg" alt="">
+      <img src="images/Screenshot_5.jpg" alt="">
+      <p>Si quieres quitar los numeros por completo para ingresar mas datos solo das click en borrar</p>
+      <img src="images/Screenshot_6.jpg" alt="">
+      <img src="images/Screenshot_7.jpg" alt="">
+      <p>Para graficar el resultado tendras que clickear el boton de Graficar la opciona varia segun si es la calculadora o la conversiones(La grafica aparecera hasta abajo de la pagina)</p>
+      <img src="images/Screenshot_8.jpg" alt="">
+      <img src="images/Screenshot_9.jpg" alt="" height="400" width="900">
+      <p>NOTA: Si no se rellenan los datos en los espacios y das click en la grafica o el signo igual te pedira con un mensaje que rellenes los espacios tendras que dar click en "cerrar" para volver a insertar las cosas</p>
+      <img src="images/Screenshot_10.jpg" alt="">
+  </section>
     <!-- Calculadora-->
     <section class="about-section text-center" id="caluladora">
         <div class="container">
@@ -125,7 +142,7 @@
                                             <!-- Lado derecho-->
                                             <div class="col-xl-4 col-lg-5 ">
                                                 <div class="featured-text text-center text-lg-center text-white-50 mx-auto mt-2 mb-5 ">
-                                                    <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px;" onclick="borrartodo()">Borrar</button>
+                                                    <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px; margin-right: 200px;" onclick="borrartodo()">Borrar</button>
                                                     <button id="graficarcomplejo" type="button" class="boton1 btn btn-secondary" onclick="grafuno();mostrar_ocultar('soluciones'); mostrar_ocultar('Formular6');">Grafica <br>Numero <br>Complejo</button>
                                                 </div>
                                             </div>
@@ -153,10 +170,7 @@
         <div class="container ">
             <div class="col">
                 <div class="col-lg-8 mx-auto ">
-                    <h2 class="text-white mb-4 ">Polares</h2>
-                    <p class="text-white-50 ">
-                        Conversión de coordenadas polares a coordenadas rectangulares
-                    </p>
+                    <h2 class="text-white mb-4 ">Polares a Rectangulares</h2>
                 </div>
                 <center>
                     <form id="Polarform" name="Polarform" onsubmit="javascript:void(0)" style="display:block; margin-left: 1%; margin-top: 20px; margin-bottom:10px;">
@@ -219,7 +233,7 @@
                                 <!-- Lado derecho-->
                                 <div class="col-xl-4 col-lg-5 ">
                                     <div class="featured-text text-center text-lg-center text-white-50 mx-auto mt-2 mb-5 ">
-                                        <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px;" onclick="borrarpolar()">Borrar</button>
+                                        <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px; margin-right: 200px;" onclick="borrarpolar()">Borrar</button>
                                         <button id="grafrectangular" type="button" class="boton1 btn btn-secondary" onclick="graftres();mostrar_ocultar('polarmsg'); mostrar_ocultar('Polarform');">Grafica <br>Numero <br>Rectangular</button>
                                     </div>
                                 </div>
@@ -240,10 +254,7 @@
         <section class="about-sectiontwo text-center " id="conversor">
     <div class="col">
         <div class="col-lg-8 mx-auto ">
-            <h2 class="text-white mb-4 ">Rectangular</h2>
-            <p class="text-white-50 ">
-                Conversión de coordenadas rectangulares a coordenadas polares
-            </p>
+            <h2 class="text-white mb-4 ">Rectangular a Polar</h2>
         </div>
         <center>
             <form id="Rectform" name="Rectform" onsubmit="javascript:void(0)" style="display:block; margin-left: 1%; margin-top: 20px; margin-bottom:10px;">
@@ -304,7 +315,7 @@
                         <!-- Lado derecho-->
                         <div class="col-xl-4 col-lg-5 ">
                             <div class="featured-text text-center text-lg-center text-white-50 mx-auto mt-2 mb-5 ">
-                                <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px;" onclick="borrarrect()">Borrar</button>
+                                <button type="button" class="boton2 btn btn-primary" style="margin-bottom:20px; margin-right: 200px;" onclick="borrarrect()">Borrar</button>
                                 <button id="graficarcomplejo" type="button" class="boton1 btn btn-secondary" onclick="grafdos();mostrar_ocultar('rectmsg'); mostrar_ocultar('Rectform');">Grafica <br>Numero <br>Polar</button>
                             </div>
                         </div>
@@ -325,9 +336,6 @@
 <br><br><br>
 <div class="masthead2"> </div>
 </section>
-    <a href="/modos/polaresarect.html">Polares a Rectangulares</a>
-    <br>
-    <a href="/modos/rectapolares.html">Rectangulares a polares</a>
     <!-- Graficadora-->
             <form id="graf0" name="graf0" onsubmit="javascript:void(0)" style="display:block; margin-left: 1%; margin-top: 20px; margin-bottom:10px;">
                 <span id="showgraf">           
