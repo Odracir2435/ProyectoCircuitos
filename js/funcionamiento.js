@@ -679,10 +679,10 @@ function grafdos() {
             mode: 'lines',
             name: ' ',
             line: {
-                color: "#ff66ab"
+                color: "blue"
             },
             marker: {
-                color: "#8090c7",
+                color: "yellow",
                 symbol: "square",
                 size: 12
             },
@@ -694,10 +694,10 @@ function grafdos() {
             mode: 'markers+text',
             name: 'Punto',
             line: {
-                color: "#ff66ab"
+                color: "blue"
             },
             marker: {
-                color: "#8090c7",
+                color: "yellow",
                 symbol: "square",
                 size: 12
             },
@@ -730,10 +730,10 @@ function graf2() {
         theta: [0, 0],
         mode: 'lines',
         line: {
-            color: "#ff66ab"
+            color: "#blue"
         },
         marker: {
-            color: "#8090c7",
+            color: "yellow",
             symbol: "square",
             size: 12
         },
@@ -745,10 +745,10 @@ function graf2() {
         mode: 'markers+text',
         name: 'Punto',
         line: {
-            color: "#ff66ab"
+            color: "blue"
         },
         marker: {
-            color: "#8090c7",
+            color: "yellow",
             symbol: "square",
             size: 12
         },
@@ -783,10 +783,10 @@ function graf2datos() {
         theta: [0, angulo],
         mode: 'lines',
         line: {
-            color: "#ff66ab"
+            color: "blue"
         },
         marker: {
-            color: "#8090c7",
+            color: "#yellow",
             symbol: "square",
             size: 12
         },
@@ -798,10 +798,10 @@ function graf2datos() {
         mode: 'markers+text',
         name: 'Punto',
         line: {
-            color: "#ff66ab"
+            color: "#blue"
         },
         marker: {
-            color: "#8090c7",
+            color: "yellow",
             symbol: "square",
             size: 12
         },
@@ -911,7 +911,7 @@ function graftres() {
                 text: ' ',
                 textposition: 'top',
                 line: {
-                    color: "#ff66ab"
+                    color: "blue"
                 },
                 type: 'scatter'
             };
@@ -923,7 +923,7 @@ function graftres() {
                 name: ' ',
                 text: ' ',
                 line: {
-                    color: "#ff66ab"
+                    color: "blue"
                 },
                 textposition: 'top',
                 type: 'scatter'
@@ -1076,7 +1076,7 @@ function graf3datos() {
             text: ' ',
             textposition: 'top',
             line: {
-                color: "#ff66ab"
+                color: "#blue"
             },
             type: 'scatter'
         };
@@ -1088,7 +1088,7 @@ function graf3datos() {
             name: ' ',
             text: ' ',
             line: {
-                color: "#ff66ab"
+                color: "#blue"
             },
             textposition: 'top',
             type: 'scatter'
